@@ -3,9 +3,7 @@ import axios from 'axios';
 import './quack.css';
 
 export default function Quack() {
-     const [imgUrl, setImgUrl] = useState([]);
-  
-//   useEffect(()=>{
+    const [imgUrl, setImgUrl] = useState([]);
 
     async function getImg(){
         const response = await axios.get('https://cors-anywhere.herokuapp.com/https://random-d.uk/api/v2/quack')
@@ -14,22 +12,7 @@ export default function Quack() {
     }
     
     console.log(imgUrl);
-//   }, []);
 
-//   return (
-//     <div className="container">
-//       <div className="lista-filmes">
-//         {imgUrl.map((img)=>{
-//           return(
-//             <article>
-//                 <strong> QUACK </strong>
-//                 <img src={img.url}/>
-//             </article> 
-//           )
-//         })}
-//       </div>
-//     </div>
-//   );
 
     return (
       <div>
@@ -38,5 +21,4 @@ export default function Quack() {
           <img className="img" src={imgUrl.url} alt=""/>
       </div>
   )
-
- }
+}
