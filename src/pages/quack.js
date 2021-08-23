@@ -34,8 +34,8 @@ export default function Quack() {
     return (
       <div>
           <h1>The Quack Machine</h1>
-          <button value="QUACK" onClick={getImg}>QUACK</button>
-          <img src={imgUrl.url} alt=""/>
+          <button value="GET QUACKED" onClick={getImg}>GET QUACKED</button>
+          <img className="img" src={imgUrl.url} alt=""/>
       </div>
   )
 
